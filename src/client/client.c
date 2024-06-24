@@ -64,6 +64,7 @@ void	ft_send_string(int pid, const char *str)
 	while (*str)
 		ft_send_char(pid, *str++);
 	ft_send_char(pid, '\0');
+	ft_printf("Character received");
 }
 
 int	main(int argc, char **argv)
