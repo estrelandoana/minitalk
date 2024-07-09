@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaula-l <apaula-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:58:45 by apaula-l          #+#    #+#             */
-/*   Updated: 2024/06/29 16:12:19 by apaula-l         ###   ########.fr       */
+/*   Updated: 2024/07/05 19:03:36 by apaula-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,6 @@ int	main(int argc, char **argv)
 	}
 	signal(SIGUSR2, ft_resp_handler);
 	ft_send_string(pid, argv[2]);
+	ft_printf("Message received\n");
 	return (0);
 }
